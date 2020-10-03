@@ -4,14 +4,84 @@ html {
 }
 
 body {
+    font-size: 18px;
     color: rgba(45, 45, 77, 0.904);
+    background: #aed1f0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFDE4, #7db6e9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFDE4, #6ea5d4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
-.dentist {
-    border-radius: 15px;
+
+
+.slide {
+    position: relative;
+    background-position: center;
+}
+
+.cycle-prev {
+    position:absolute;
+    top: 35%;
+    background-color: rgba(75, 75, 75, 0.801);
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    color: rgba(255, 255, 255, 0.904);
+    padding: 10px 10px;
+    display: block;
+    cursor: pointer;
+    font-size: 130%;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.cycle-next {
+    position:absolute;
+    right: 0;
+    top: 35%;
+    background-color: rgba(75, 75, 75, 0.801);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    color: rgba(255, 255, 255, 0.904);
+    padding: 10px 10px;
+    display: block;
+    cursor: pointer;
+    font-size: 130%;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.cycle-slideshow:hover .cycle-prev,
+.cycle-slideshow:hover .cycle-next{
+    opacity: 1;
 }
 
 
+.zubar2 {
+    background: url("https://cdn.pixabay.com/photo/2016/01/19/15/05/doctor-1149149_960_720.jpg");
+    height: 600px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.zubar-naradie {
+    background: url("https://cdn2.zdravynakup.sk/image/cache/data/suprava_zubnych_nastrojov_4ks_glamza%20(4)-420x420.jpg");
+    height: 400px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
+.bg-boxes {
+    border: 1px solid rgb(194, 194, 255);
+    box-shadow: 0 0 8px 5px rgb(165, 180, 212);
+    background-position: center;
+}
 
+.bg-dentist {
+    border: 1px solid rgb(194, 194, 255);
+    box-shadow: 0 0 8px 5px rgb(225, 242, 250);
+    background-position: center;
+}
