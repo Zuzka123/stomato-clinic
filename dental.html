@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<DOCTYPE html>
 <html>
 
 <head>
@@ -25,7 +25,7 @@
                 <div class="navbar-nav">
                     <a class="nav-item nav-link" href="#">DOMOV</a>
                     <a class="nav-item nav-link" href="#">O NÁS</a>
-                    <a class="nav-item nav-link" href="#">CENNÍK</a>
+                    <a class="nav-item nav-link" href="#" data-toggle="modal" data-target="#cennik">CENNÍK</a>
                     <a class="nav-item nav-link" href="#">REZERVÁCIA TERMÍNU</a>
                     <a class="nav-item nav-link" href="#">KONTAKT</a>
                 </div>
@@ -35,7 +35,7 @@
     </section>
 
     <section>
-        
+
         <div class="row">
             <div class="container mt-5 d-flex justify-content-center">
 
@@ -46,21 +46,17 @@
                     <span class="cycle-next"><i class="fas fa-chevron-circle-right"></i></span>
 
                     <div class="slide ">
-                        <img class="mb-5" src="obrazky/zubar.jpg" alt="zubar"
-                        style="height: 500px;">
-                            
+                        <img class="mb-5" src="obrazky/zubar.jpg" alt="zubar" style="height: 500px;">
+
                     </div>
                     <div class="slide ">
-                        <img class="mb-5" src="obrazky/dentist.jpg" alt="dentist"
-                            style="height: 500px;">
+                        <img class="mb-5" src="obrazky/dentist.jpg" alt="dentist" style="height: 500px;">
                     </div>
                     <div class="slide ">
-                        <img class="mb-5" src="obrazky/chair.jpg" alt="chair"
-                            style="height: 500px;">
+                        <img class="mb-5" src="obrazky/chair.jpg" alt="chair" style="height: 500px;">
                     </div>
                     <div class="slide ">
-                        <img class="mb-5" src="obrazky/zuby-deti.jpg" alt="zuby-deti"
-                            style="height: 500px;">
+                        <img class="mb-5" src="obrazky/zuby-deti.jpg" alt="zuby-deti" style="height: 500px;">
                     </div>
                 </div>
             </div>
@@ -122,6 +118,90 @@
         </div>
         </div>
     </section>
+
+    <section>
+        <!-- Modal -->
+        <div class="modal fade" id="cennik" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header " style="background-image: url(obrazky/background.jpg);">
+                        <h2 class=" col-12 modal-title d-flex justify-content-center text-uppercase font-weight-bold"
+                            style="color: rgb(5, 110, 195); ">Cenník</h2>
+                    
+                    </div>
+                    <div class="modal-body ml-3 mr-3" style="color: rgb(5, 110, 195); " >
+                        <div class="row border-bottom mt-5">
+                            <p class="col-6">
+                                Konzultácie
+                            </p>
+                            <p class="col-6 d-flex justify-content-end">
+                                od 50 €
+                            </p>
+                        </div>
+                        <div class="row border-bottom">
+                            <p class="col-6">
+                                Dentálna hygiena
+                            </p>
+                            <p class="col-6 d-flex justify-content-end">
+                                od 50 €
+                            </p>
+                        </div>
+                        <div class="row border-bottom">
+                            <p class="col-6">
+                                Biela výplň
+                            </p>
+                            <p class="col-6 d-flex justify-content-end">
+                                od 45 €
+                            </p>
+                        </div>
+                        <div class="row border-bottom">
+                            <p class="col-6">
+                                Opätovné preliečenie kanálika zubu
+                            </p>
+                            <p class="col-6 d-flex justify-content-end">
+                                od 150 €
+                            </p>
+                        </div>
+                        <div class="row border-bottom">
+                            <p class="col-6">
+                                Vytrhnutie zubu
+                            </p>
+                            <p class="col-6 d-flex justify-content-end">
+                                od 30 €
+                            </p>
+                        </div>
+                        <div class="row border-bottom">
+                            <p class="col-6">
+                                Zubný implantát
+                            </p>
+                            <p class="col-6 d-flex justify-content-end">
+                                od 800 €
+                            </p>
+                        </div>
+                        <div class="row border-bottom">
+                            <p class="col-6">
+                                Bielenie zubov
+                            </p>
+                            <p class="col-6 d-flex justify-content-end">
+                                350 €
+                            </p>
+                        </div>
+                        <div class="row mb-5">
+                            <p class="col-6">
+                                Chránič
+                            </p>
+                            <p class="col-6 d-flex justify-content-end">
+                                150 €
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-footer" style="background-image: url(obrazky/background.jpg);">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">CLOSE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="jumbotron">
         <div class="container">
             <div class="row">
@@ -156,7 +236,8 @@
                 <div class="col-lg-3 card mr-3 p-3 text-center bg-boxes">
                     <h4 class="pb-3">Nina Gajdošová</h4>
                     <p>
-                        Odporúčam, príjemný vzhľad kliniky veľmi pekne upravená čakáreň, milý personál. Vrátili mi úsmev
+                        Odporúčam, príjemný vzhľad kliniky veľmi pekne upravená čakáreň, milý personál. Vrátili mi
+                        úsmev
                         na tvári.
                     </p>
                     <div>
@@ -242,10 +323,6 @@
         </footer>
     </section>
 
-
-
-
-    <script type="text/javascript" src="js/dental.js"></script>
     <script src="https://kit.fontawesome.com/3c2a326a9d.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
