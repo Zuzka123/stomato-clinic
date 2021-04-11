@@ -1,1 +1,1 @@
-"# stomato-clinic" 
+# stomato-clinic
